@@ -1,0 +1,50 @@
+# ============================================
+# PrismStrikes Configuration
+# Orbital Strike Cannons for Prism SMP
+# ============================================
+
+# ---- STRIKE TIERS ----
+# spawn-height = blocks ABOVE the target (relative)
+# fuse-ticks = time before TNT explodes (enough to fall to ground)
+# tnt-spacing = blocks between each TNT (lower = denser circle, more TNT)
+# level-cost = XP levels consumed when deploying (0 = free)
+tiers:
+  1:
+    name: "&eOrbital Strike Beacon"
+    radius: 20
+    fuse-ticks: 80
+    spawn-height: 40
+    tnt-spacing: 3.0
+    level-cost: 10
+  2:
+    name: "&6Heavy Orbital Strike"
+    radius: 50
+    fuse-ticks: 80
+    spawn-height: 45
+    tnt-spacing: 3.0
+    level-cost: 20
+  3:
+    name: "&dCataclysm Orbital Strike"
+    radius: 80
+    fuse-ticks: 80
+    spawn-height: 50
+    tnt-spacing: 3.5
+    level-cost: 30
+
+# ---- PERFORMANCE ----
+performance:
+  max-tnt-per-tick: 100
+  wave-delay-ticks: 1
+
+# ---- PROTECTION ----
+protection:
+  blocked-worlds:
+    - "spawnworld"
+    - "duels"
+    - "world_the_end"
+  protected-regions: []
+
+# ---- LOGGING ----
+logging:
+  log-to-file: true
+  log-to-console: true

@@ -1,0 +1,28 @@
+name: PrismStrikes
+version: '1.1.0'
+main: online.prismsmp.strikes.PrismStrikes
+api-version: '1.21'
+description: Orbital Strike Cannons for Prism SMP
+authors: [luc1d_G0]
+
+depend:
+  - WorldGuard
+  - WorldEdit
+
+commands:
+  prismstrikes:
+    description: PrismStrikes admin commands
+    usage: /prismstrikes <give|log|protect|unprotect|reload>
+    permission: prismstrikes.admin
+    aliases: [ps, strikes]
+
+permissions:
+  prismstrikes.admin:
+    description: Access to all PrismStrikes admin commands
+    default: op
+  prismstrikes.use:
+    description: Allows using orbital strike items
+    default: true
+  prismstrikes.craft:
+    description: Allows crafting orbital strike items
+    default: true
